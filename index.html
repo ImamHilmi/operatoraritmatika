@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Sederhana</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- Start Main Form -->
+
+    <h2>Perhitungan Sederhana</h2>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="container">
+                <form>
+                  <div class="row">
+                    <div class="col-25">
+                     <label for="input1">Input 1 : </label>
+                   </div>
+                   <div class="col-75">
+                     <input type="number" id="input1" name="input1" placeholder="Input Pertama . . .">
+                   </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-25">
+                      <label for="aritmatik">hitung Aritmatika : </label>
+                   </div>
+                    <div class="col-75">
+                      <select id="aritmatik" name="aritmatik" onChange="setValue()">
+                         <option value="pilih">Pilih Operator</option>
+                         <option value="penjumlahan">Penjumlahan (+)</option>
+                         <option value="pengurangan">Pengurangan (-)</option>
+                         <option value="perkalian">Perkalian (*)</option>
+                         <option value="pembagian">Pembagian (:)</option>
+                     </select>
+                   </div>
+                  </div>
+                 <div class="row">
+                  <div class="col-25">
+                     <label for="input2">Input 2 : </label>
+                  </div>
+                  <div class="col-75">
+                    <input type="number" id="input2" name="input2" placeholder="Input Kedua . . .">
+                    </div>
+                  </div>
+                 <div class="row">
+                   <input type="submit" id="submit" onclick="operate()" value="Hitung">
+                </form>
+               </div>
+        </div>
+      </div>
+
+    <!-- End Main Form -->
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
+
+</body>
+</html>
